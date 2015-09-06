@@ -3,10 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>Game Time</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P|Megrim' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
+
 <body>
-  <canvas id="board" width="675" height="675" style="padding: 0; margin: auto; display: block;"></canvas>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="main.bundle.js"></script>
+  <div class="game-box">
+    <h1>SNAKE</h1>
+    <canvas id="board" width="510" height="510"></canvas>
+    <div class="game-info">
+      <h2>Instructions</h2>
+      <p class="instructions">Move: <br><img src="http://web1.nambuccahd-h.schools.nsw.edu.au/mediawiki/images/a/a4/Arrow-keys.png" style="padding-left: 52px;">
+      </p>
+      <p class="instructions">Eat:
+        <ul>
+          <li><img src="lib/1.png"> 5</li>
+          <li><img src="lib/6.png"> 50</li>
+          <li><img src="lib/2.png"> 10</li>
+          <li><img src="lib/7.png"> 75</li>
+          <li><img src="lib/3.png"> 15</li>
+          <li><img src="lib/8.png"> 100</li>
+          <li><img src="lib/4.png"> 20</li>
+          <li><img src="lib/9.png"> 200</li>
+          <li><img src="lib/5.png"> 25</li>
+          <li><img src="lib/10.png"> 500</li>
+        </ul>
+      </p>
+    </div>
+  </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="main.bundle.js"></script>
+
 </html>
