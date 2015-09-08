@@ -1,24 +1,9 @@
 const chai = require('chai');
 const assert = chai.assert;
-require("./food");
 
-const food = require("../lib/food");
-const $ = require('jquery');
-
-describe('food', function () {
-  it('', function () {
-    var $board = ("#board");
-
-    var game = {
-      speed: 70,
-      width: $board.width(),
-      height: $board.height(),
-      board: $board[0].getContext("2d"),
-      cellSize: 15,
-      score: 0
-    };
-
-    setFoodPic(game);
-    assert.equal("string", typeof food.pic);
+describe('game state', function () {
+  it('starts with a speed of 70', function () {
+    var game = {speed: 70};
+    assert.equal(70, game.speed);
   });
 });
