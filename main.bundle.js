@@ -136,7 +136,7 @@
 	    if (game.highScore < game.score) {
 	      game.highScore = game.score;
 	      $("#high-score").text(game.highScore);
-	    };
+	    }
 	    $("#last-game-score").text(game.score);
 	  }
 
@@ -145,7 +145,7 @@
 	    $(document).keyup(function (key) {
 	      if (!game.running && key.which == "13") {
 	        newGame();
-	      };
+	      }
 	    });
 	  }
 
@@ -219,8 +219,8 @@
 	  makeNewFood: function makeNewFood(snakeBody) {
 	    this.x = foodSpot();
 	    this.y = foodSpot();
-	    var bodyCheck = snakeBody.filter.call(this, function (cell) {
-	      cell.x == this.x && cell.y == this.y;
+	    var bodyCheck = snakeBody.filter(function (cell) {
+	      cell.x == food.x && cell.y == food.y;
 	    });
 	    if (bodyCheck.length > 0) {
 	      this.makeNewFood();
