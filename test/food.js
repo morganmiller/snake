@@ -1,7 +1,3 @@
-const chai = require('chai');
-const assert = chai.assert;
-require("./food");
-
 const food = require("../lib/food");
 const $ = require('jquery');
 
